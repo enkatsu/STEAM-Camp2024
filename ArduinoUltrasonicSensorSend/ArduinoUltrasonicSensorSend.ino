@@ -23,8 +23,6 @@ void loop() {
     // 音速を340m/sに設定
     byte distance = constrain(duration * 340 * 100 / 1000000, 0, 255);
     Serial.write(distance);
-  } else {
-    Serial.write(0);
   }
   delay(100);
 }
